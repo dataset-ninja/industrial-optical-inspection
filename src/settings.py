@@ -20,10 +20,17 @@ PROJECT_NAME_FULL: str = "Weakly Supervised Learning for Industrial Optical Insp
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC_BY_4_0()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Domain.Industrial()]
-CATEGORY: Category = Category.Construction()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [
+    Domain.Industrial(),
+    Domain.ComputerAidedQualityControl(),
+]
+CATEGORY: Category = Category.Manufacturing()
 
-CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation()]
+CV_TASKS: List[CVTask] = [
+    CVTask.InstanceSegmentation(),
+    CVTask.SemanticSegmentation(),
+    CVTask.ObjectDetection(),
+]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
 
 RELEASE_DATE: Optional[str] = "2007-09-14"  # e.g. "YYYY-MM-DD"
@@ -42,7 +49,18 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/industrial-optical-inspectio
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "https://zenodo.org/record/8086136"
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = {
+    "Class1.zip": "https://zenodo.org/record/8086136/files/Class1.zip?download=1",
+    "Class2.zip": "https://zenodo.org/record/8086136/files/Class2.zip?download=1",
+    "Class3.zip": "https://zenodo.org/record/8086136/files/Class3.zip?download=1",
+    "Class4.zip": "https://zenodo.org/record/8086136/files/Class4.zip?download=1",
+    "Class5.zip": "https://zenodo.org/record/8086136/files/Class5.zip?download=1",
+    "Class6.zip": "https://zenodo.org/record/8086136/files/Class6.zip?download=1",
+    "Class7.zip": "https://zenodo.org/record/8086136/files/Class7.zip?download=1",
+    "Class8.zip": "https://zenodo.org/record/8086136/files/Class8.zip?download=1",
+    "Class9.zip": "https://zenodo.org/record/8086136/files/Class9.zip?download=1",
+    "Class10.zip": "https://zenodo.org/record/8086136/files/Class10.zip?download=1",
+}
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -50,11 +68,11 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 PAPER: Optional[Union[str, List[str]]] = None
-CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = ["Wieler", "Matthias", "Hahn", "Tobias", "Hamprecht", "Fred A."]
+CITATION_URL: Optional[str] = "https://zenodo.org/record/8086136/export/hx"
+AUTHORS: Optional[List[str]] = ["Wieler, Matthias", "Hahn, Tobias", "Hamprecht, Fred A."]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Bosch Research, Germany"
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.bosch.com/research/"
 
 SLYTAGSPLIT: Optional[Dict[str, List[str]]] = None
 TAGS: Optional[List[str]] = None
