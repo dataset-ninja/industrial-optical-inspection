@@ -24,4 +24,4 @@ If you make use of the Industrial Optical Inspection data, please cite the follo
 }
 ```
 
-[🔗 Source](https://zenodo.org/record/8086136)
+[Source](https://zenodo.org/record/8086136)
