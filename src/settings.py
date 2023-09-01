@@ -41,7 +41,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://zenodo.org/record/8086136"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 2033845
+PREVIEW_IMAGE_ID: int = 2036236
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/industrial-optical-inspection"
