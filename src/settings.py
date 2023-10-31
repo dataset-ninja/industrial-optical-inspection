@@ -38,7 +38,7 @@ RELEASE_DATE: Optional[str] = "2007-09-14"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = "https://zenodo.org/record/8086136"
+HOMEPAGE_URL: str = "https://hci.iwr.uni-heidelberg.de/content/weakly-supervised-learning-industrial-optical-inspection"
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = 2036236
@@ -69,8 +69,11 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 PAPER: Optional[Union[str, List[str]]] = None
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"Zenodo":"https://zenodo.org/record/8086136"}
+
 CITATION_URL: Optional[str] = "https://zenodo.org/record/8086136/export/hx"
 AUTHORS: Optional[List[str]] = ["Wieler, Matthias", "Hahn, Tobias", "Hamprecht, Fred A."]
+AUTHORS_CONTACTS: Optional[List[str]] = None
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "Bosch Research, Germany"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.bosch.com/research/"
@@ -116,8 +119,10 @@ def get_settings():
     settings["download_original_url"] = DOWNLOAD_ORIGINAL_URL
     settings["class2color"] = CLASS2COLOR
     settings["paper"] = PAPER
+    settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
