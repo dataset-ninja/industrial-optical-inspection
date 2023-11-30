@@ -1,6 +1,6 @@
 Dataset **Industrial Optical Inspection** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/G/G/iL/XKcWG3xw1kMbpZUY98tMiEDVA3LCUyJHV5NaTcuz0CUF0dlp4yQPtuPldr4y040DsGYEaxALpgbnX22MmUebxq3VI0XRSdD2kesR4Uga5HoSfNQSrUeSg1UFzKLB.tar)
+ [Download](https://www.dropbox.com/scl/fi/e1ohlrcolpnjou64koff7/industrial-optical-inspection-DatasetNinja.tar?rlkey=0dziagfy96dtq7oa0hs2sxz2e&dl=1)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
